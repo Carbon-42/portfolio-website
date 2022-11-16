@@ -115,10 +115,6 @@ button:hover, button:focus, .button:hover, .button:focus {
 	box-sizing: border-box;
 }
 
-.social-media {
-
-}
-
 .page-header {
 	display: flex;
 	width: 100%;
@@ -225,9 +221,6 @@ button:hover, button:focus, .button:hover, .button:focus {
 	.grid {
 		grid-template-columns: 1fr;
 	}
-	#contact-form {
-
-	}
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
@@ -273,10 +266,6 @@ button:hover, button:focus, .button:hover, .button:focus {
 
 #path1267 {
 	animation: 8s color-change infinite alternate linear;
-}
-
-#image639 {
-	animation: ;
 }
 
 section {
