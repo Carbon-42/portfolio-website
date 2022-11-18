@@ -224,10 +224,12 @@ button:hover, button:focus, .button:hover, .button:focus {
 
 	.grid__item:last-child {
 	  -ms-grid-column: 3;
+		grid-column: 3;
 	      grid-column-start: 3;
 	  -ms-grid-column-span: 0;
 	  grid-column-end: 3;
 	  -ms-grid-row: 1;
+	  grid-row: 1;
 	      grid-row-start: 1;
 	  -ms-grid-row-span: 2;
 	  grid-row-end: 3;
@@ -256,6 +258,10 @@ button:hover, button:focus, .button:hover, .button:focus {
 	.grid {
 		-ms-grid-columns: 1fr;
 		grid-template-columns: 1fr;
+	}
+
+	#skills-table {
+		font-size: 12px;
 	}
 }
 
