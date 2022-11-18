@@ -310,7 +310,3 @@ section {
 	margin: 10px;
 	padding: 10px;
 }
-
-.social-link::before {
-	content: img/github_icon.svg;
-}
