@@ -253,6 +253,10 @@ button:hover, button:focus, .button:hover, .button:focus {
 		margin: auto;
 		float: none;
 	}
+
+	.profile {
+		text-align: center;
+	}
 }
 
 @keyframes color-change {
