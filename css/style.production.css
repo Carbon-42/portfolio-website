@@ -10,6 +10,7 @@ body {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 1.6;
+	background-color: #f2f2f2;
 }
 
 h1 {
@@ -86,6 +87,7 @@ button:hover, button:focus, .button:hover, .button:focus {
 }
 
 .navigation-list__item--active {
+	font-size: 20px;
 	text-decoration: none;
 }
 
@@ -105,6 +107,8 @@ button:hover, button:focus, .button:hover, .button:focus {
 	width: 250px;
 	margin-right: 40px;
 	border-radius: 50%;
+	-webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .page-footer {
@@ -122,6 +126,7 @@ button:hover, button:focus, .button:hover, .button:focus {
 .profile {
 	max-width: 700px;
 	margin: 0 auto;
+	padding: 20px;
 }
 
 * {
@@ -173,16 +178,18 @@ button:hover, button:focus, .button:hover, .button:focus {
 }
 
 #about-me {
-	text-align: left;
-
+	text-align: justify;
+	margin: auto;
+	padding: 20px;
 }
 
 #skills-table {
 	margin-left: auto;
 	margin-right: auto;
+	border-spacing: 5px;
 }
 
-/*start grid fallback
+/*start grid fallback*/
 
 .grid__item {
 	display: inline-block;
@@ -197,6 +204,7 @@ button:hover, button:focus, .button:hover, .button:focus {
 		-ms-grid-columns: 1fr 20px 1fr 20px 1fr;
 		grid-template-columns: 1fr 1fr 1fr;
 		grid-gap: 20px;
+		margin: 0 10%;
 		/*It’s considered good practice to specify only one property, and this property is usually the columns property. This means the rows property defaults to auto, and that the grid should still work even if the row with the property grid-template-rows is deleted:*/
 		/* grid-template-columns: 300px 300px 300px; fractions are better than pixels - they are responsive */
 		/*grid-template-columns: 300px 300px 300px;*/
@@ -204,10 +212,14 @@ button:hover, button:focus, .button:hover, .button:focus {
 	}
 
 	.grid__item {
-		background-color: lightgray;
+		background-color: #ddd;
 		width: auto;
 		min-height: auto;
 		margin: 0;
+		border-radius: 10px;
+		padding: 0 10px 15px;
+		-webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	}
 
 	.grid__item:last-child {
@@ -227,15 +239,23 @@ button:hover, button:focus, .button:hover, .button:focus {
 	  grid-column: 3 / 3;
 	  grid-row: 1 / 3;
 	}*/
+
+	#contact-form {
+		display: -ms-grid;
+		display: grid;
+		-ms-grid-columns: 1fr;
+		grid-template-columns: 1fr;
+		text-align: center;
+		margin: auto;
+		max-width: 300px;
+		border-radius: 5px;
+	}
 }
 
 @media all and (max-width: 500px) {
 	.grid {
 		-ms-grid-columns: 1fr;
 		grid-template-columns: 1fr;
-	}
-	#contact-form {
-
 	}
 }
 
@@ -258,6 +278,12 @@ button:hover, button:focus, .button:hover, .button:focus {
 
 	h1 {
 		font-size: 22px;
+	}
+
+	.profile__portrait {
+		display: block;
+		margin: auto;
+		float: none;
 	}
 }
 
@@ -296,11 +322,6 @@ button:hover, button:focus, .button:hover, .button:focus {
 #path1267 {
 	-webkit-animation: 8s color-change infinite alternate linear;
 	        animation: 8s color-change infinite alternate linear;
-}
-
-#image639 {
-	-webkit-animation: ;
-	        animation: ;
 }
 
 section {
