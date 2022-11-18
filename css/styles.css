@@ -221,6 +221,9 @@ button:hover, button:focus, .button:hover, .button:focus {
 	.grid {
 		grid-template-columns: 1fr;
 	}
+	#about-me {
+		margin: auto;
+	}
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
@@ -306,4 +309,8 @@ section {
 #calgary-svg {
 	margin: 10px;
 	padding: 10px;
+}
+
+.social-link::before {
+	content: img/github_icon.svg;
 }

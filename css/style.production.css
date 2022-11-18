@@ -260,8 +260,8 @@ button:hover, button:focus, .button:hover, .button:focus {
 		-ms-grid-columns: 1fr;
 		grid-template-columns: 1fr;
 	}
-	#contact-form {
-
+	#about-me {
+		margin: auto;
 	}
 }
 
