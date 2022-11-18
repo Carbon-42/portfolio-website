@@ -134,10 +134,6 @@ button:hover, button:focus, .button:hover, .button:focus {
 	        box-sizing: border-box;
 }
 
-.social-media {
-
-}
-
 .page-header {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -322,11 +318,6 @@ button:hover, button:focus, .button:hover, .button:focus {
 #path1267 {
 	-webkit-animation: 8s color-change infinite alternate linear;
 	        animation: 8s color-change infinite alternate linear;
-}
-
-#image639 {
-	-webkit-animation: ;
-	        animation: ;
 }
 
 section {
