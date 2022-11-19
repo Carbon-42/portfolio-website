@@ -308,6 +308,7 @@ section {
 
 .contact-field {
 	border-radius: 5px;
+	border: 1px ridge;
 }
 
 .standard-label {
@@ -316,9 +317,18 @@ section {
 
 #message {
 	padding-bottom: 5px;
+	margin-bottom: 3px;
 }
 
 #calgary-svg {
 	margin: 10px;
 	padding: 10px;
+}
+
+.github-link::before {
+	content: url(../img/github_icon.svg);
+}
+
+.linkedin-link::before {
+	content: url(../img/linkedin_icon.svg);
 }
