@@ -159,9 +159,17 @@ button:hover, button:focus, .button:hover, .button:focus {
 }
 
 #skills-table {
-	margin-left: auto;
-	margin-right: auto;
+	margin: auto;
+	width: 70%;
 	border-spacing: 5px;
+}
+
+table {
+	table-layout: fixed;
+}
+
+th, td {
+	border-bottom: 1px solid #ddd;
 }
 
 /*start grid fallback*/
