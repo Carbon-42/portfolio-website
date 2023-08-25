@@ -6,36 +6,44 @@
 	<link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<!-- <link rel="stylesheet" type="text/css" href="css/style.production.css"> -->
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<title>Career 3</title>
 </head>
-
 <body>
-
-	<header class="page-header">
-		<img src="img/profile-logo.jpg" alt="A picture of me" class="page-header__item  profile-portrait">
-		<span id="name">BRAD RICHARDSON</span>
-		<nav class="main-navigation page-header__item">
+	<!-- <header class="page-header fixed-top"> -->
+		<ul class="menu">
+			<li><a class="menuItem" href="#home">Home</a></li>
+			<li><a class="menuItem" href="#about">About</a></li>
+			<li><a class="menuItem" href="#projects">Projects</a></li>
+			<li><a class="menuItem" href="#contact">Contact</a></li>
+		</ul>
+		<button class="hamburger">
+			<i class="menuIcon material-icons">menu</i>
+			<i class="closeIcon material-icons">close</i>
+		</button>
+		<!-- <nav class="main-navigation page-header__item topnav">
 			<ul role="menu" class="navigation-list">
 				<li role="presentation">
-					<a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
+					<a href="#home" role="menuitem" class="navigation-list__item">Home</a>
 				</li>
 				<li role="presentation">
-					<a href="about.html" role="menuitem" class="navigation-list__item">About Me</a>	
+					<a href="#about" role="menuitem" class="navigation-list__item">About</a>	
 				</li>
 				<li role="presentation">
-					<a href="projects.html" role="menuitem" class="navigation-list__item">Projects</a>
+					<a href="#projects" role="menuitem" class="navigation-list__item">Projects</a>
 				</li>
 				<li role="presentation">
-					<a href="contacts.html" role="menuitem" class="navigation-list__item">Contact</a>			
+					<a href="#contact" role="menuitem" class="navigation-list__item">Contact</a>			
 				</li>
-			</ul>			
-		</nav>
-	</header>
+			</ul>
+		</nav> -->
+	<!-- </header> -->
+	<div id="home"></div>
 	<div class="background">
 		<div class="profile">
-			<img src="img/profile-picture2.png" alt="A picture of me" class="profile-logo">
+			<img src="img/profile-picture2.png" alt="A picture of me" class="profile-portrait">
 		</div>
 		<div class="profile_greeting">
 			<h1>GOOD DAY, I'M BRAD RICHARDSON</h1>
@@ -48,7 +56,7 @@
 			<a href="files/cv.pdf" class="button" target="_blank">PROJECTS</a>
 		</div>
 	</div>
-	<div class="about">
+	<div id="about" class="about">
 		<h1>ABOUT ME</h1>
 		<p id="about-me">
 			During my <span><a href="https://careerfoundry.com/en/courses/become-a-web-developer/">CAREERFOUNDRY</a></span> 
@@ -101,7 +109,7 @@
       </div>
     </div>
 	</div>
-	<div class="project-container">
+	<div id="projects" class="project-container">
 		<h1>PROJECTS</h1>
 		<div class="project-item-container">
 			<div class="project-item">
@@ -114,7 +122,7 @@
 					This is my first project in HTML, CSS and JS.
 				</p>
 				<ul>
-					<lh style="text-decoration: underline;">Technologies Used:</lh>
+					<lh>Technologies Used:</lh>
 					<li>HTML</li>
 					<li>CSS</li>
 					<li>JavaScript</li>
@@ -134,77 +142,66 @@
 					external API and enables the viewing of Pokémon details on demand.
 				</p>
 				<ul>
-					<lh style="text-decoration: underline;">Technologies Used:</lh>
+					<lh>Technologies Used:</lh>
 					<li>HTML</li>
 					<li>CSS</li>
 					<li>JavaScript</li>
 				</ul>
 				<div class="project-button">
-					<a href="https://github.com/Carbon-42/free-course" class="button" target="_blank">GITHUB</a>
+					<a href="https://github.com/Carbon-42/pokedex-app" class="button" target="_blank">GITHUB</a>
+				</div>		
+			</div>
+			<div class="project-item">
+				<h2>HIFI MOVIES - API</h2>
+				<div id="project-screenshot-hifi-api" class="project-screenshot-container">
+					<a href="https://github.com/Carbon-42/hifi_movie_api" target="_blank" class="hifi-api-link project-screenshot"></a>
+					<h4>REPOSITORY</h4>
+				</div>
+				<p class="project-description">
+					HIFI Movie API is a small server-side component of a “movies” web application. 
+					The web application will provide users with access to information about different movies, directors, and genres. 
+					Users will be able to sign up, update their personal information, and create a list of their favorite movies.
+				</p>
+				<lh  class="long-list-heading">Technologies Used:</lh>
+				<ul class="long-list">
+					<li>Node</li>
+					<li>Express</li>
+					<li>MondoDB</li>
+					<li>Mongoose</li>
+					<li>PostgreSQL</li>
+					<li>Bcrypt</li>
+					<li>Body-parser</li>
+					<li>Postman</li>
+					<li>Passport</li>
+					<li>Render</li>
+				</ul>
+				<div class="project-button">
+					<a href="https://github.com/Carbon-42/hifi_movie_api" class="button" target="_blank">GITHUB</a>
 				</div>		
 			</div>
 			<div class="project-item">
 				<h2>HIFI MOVIES - REACT CLIENT</h2>
 				<div class="project-screenshot-container">
-					<a href="https://carbon-42.github.io/free-course/" target="_blank" class="free-course-link project-screenshot"></a>
+					<a href="https://hifimovies.netlify.app" target="_blank" class="hifi-react-link project-screenshot"></a>
 					<h4>LIVE SITE</h4>
 				</div>
 				<p class="project-description">
 					React. HIFI Movie Client is a client UI integrated with the HIFI Movie API to create a full stack "movies" web application.
 				</p>
 				<ul>
-					<lh style="text-decoration: underline;">Technologies Used:</lh>
-					<li>HTML</li>
-					<li>CSS</li>
-					<li>JavaScript</li>
+					<lh>Technologies Used:</lh>
+					<li>React</li>
+					<li>Bootstrap</li>
+					<li>Parcel</li>
 				</ul>
 				<div class="project-button">
-					<a href="https://github.com/Carbon-42/free-course" class="button" target="_blank">GITHUB</a>
-				</div>		
-			</div>
-			<div class="project-item">
-				<h2>A TIME & PLACE APP</h2>
-				<div class="project-screenshot-container">
-					<a href="https://carbon-42.github.io/free-course/" target="_blank" class="free-course-link project-screenshot"></a>
-					<h4>LIVE SITE</h4>
-				</div>
-				<p class="project-description">
-					A Time & Place is a serverless, progressive web application (PWA) with React using a test-driven development (TDD) technique.
-				</p>
-				<ul>
-					<lh style="text-decoration: underline;">Technologies Used:</lh>
-					<li>HTML</li>
-					<li>CSS</li>
-					<li>JavaScript</li>
-				</ul>
-				<div class="project-button">
-					<a href="https://github.com/Carbon-42/free-course" class="button" target="_blank">GITHUB</a>
-				</div>		
-			</div>
-			<div class="project-item">
-				<h2>CHIT CHAT - REACT NATIVE CLIENT</h2>
-				<div class="project-screenshot-container">
-					<a href="https://carbon-42.github.io/free-course/" target="_blank" class="free-course-link project-screenshot"></a>
-					<h4>LIVE SITE</h4>
-				</div>
-				<p class="project-description">
-					The Chit Chat app for mobile devices uses React Native. The app will provide users with a chat interface 
-					and options to share images and their location.
-				</p>
-				<ul>
-					<lh style="text-decoration: underline;">Technologies Used:</lh>
-					<li>HTML</li>
-					<li>CSS</li>
-					<li>JavaScript</li>
-				</ul>
-				<div class="project-button">
-					<a href="https://github.com/Carbon-42/free-course" class="button" target="_blank">GITHUB</a>
+					<a href="https://github.com/Carbon-42/hifi_movie_client" class="button" target="_blank">GITHUB</a>
 				</div>		
 			</div>
 			<div class="project-item">
 				<h2>HIFI MOVIES - ANGULAR CLIENT</h2>
 				<div class="project-screenshot-container">
-					<a href="https://carbon-42.github.io/free-course/" target="_blank" class="free-course-link project-screenshot"></a>
+					<a href="https://carbon-42.github.io/hifiMovies-angular-client/" target="_blank" class="hifi-angular-link project-screenshot"></a>
 					<h4>LIVE SITE</h4>
 				</div>
 				<p class="project-description">
@@ -213,24 +210,77 @@
 					directors, and genres. Users can sign up, update their personal information, and create a list of their favorite movies.
 				</p>
 				<ul>
-					<lh style="text-decoration: underline;">Technologies Used:</lh>
-					<li>HTML</li>
-					<li>CSS</li>
-					<li>JavaScript</li>
+					<lh>Technologies Used:</lh>
+					<li>Angular</li>
+					<li>Angular Material</li>
+					<li>TypeScript</li>
+					<li>Typedoc</li>
+					<li>JSDoc</li>
 				</ul>
 				<div class="project-button">
-					<a href="https://github.com/Carbon-42/free-course" class="button" target="_blank">GITHUB</a>
+					<a href="https://github.com/Carbon-42/hifiMovies-angular-client" class="button" target="_blank">GITHUB</a>
+				</div>		
+			</div>
+			<div class="project-item">
+				<h2>A TIME & PLACE APP</h2>
+				<div class="project-screenshot-container">
+					<a href="https://carbon-42.github.io/time-place/" target="_blank" class="time-place-link project-screenshot"></a>
+					<h4>LIVE SITE</h4>
+				</div>
+				<p class="project-description">
+					A Time & Place is a serverless, progressive web application (PWA) with React using a test-driven development (TDD) technique.
+				</p>
+				<ul>
+					<lh>Technologies Used:</lh>
+					<li>React</li>
+					<li>Jest</li>
+					<li>AWS Lambda</li>
+					<li>Recharts</li>
+				</ul>
+				<div class="project-button">
+					<a href="https://github.com/Carbon-42/time-place" class="button" target="_blank">GITHUB</a>
+				</div>		
+			</div>
+			<div class="project-item">
+				<h2>CHIT CHAT - REACT NATIVE CLIENT</h2>
+				<div class="project-screenshot-container" id="project-screenshot-chit-chat">
+					<a href="./img/project-screenshots/chit-chat.webm" target="_blank" class="chit-chat-link project-screenshot"></a>
+					<h4>VIDEO</h4>
+				</div>
+				<p class="project-description">
+					The Chit Chat app for mobile devices uses React Native. The app will provide users with a chat interface 
+					and options to share images and their location.
+				</p>
+				<ul>
+					<lh>Technologies Used:</lh>
+					<li>React Native</li>
+					<li>Gifted Chat</li>
+					<li>Firestore Database</li>
+					<li>Expo</li>
+					<li>Android Studio</li>					
+				</ul>
+				<div class="project-button">
+					<a href="https://github.com/Carbon-42/chat-app" class="button" target="_blank">GITHUB</a>
 				</div>		
 			</div>
 		</div>		
 	</div>
-	<footer class="page-footer">
-		<p>Find Me On</p>
-		<div class="social-media">
-			<a href="https://github.com/Carbon-42" class="github-link" target="_blank"></a>
-			<a href="https://ca.linkedin.com/in/brad-richardson-6b7b9b79" class="linkedin-link" target="_blank"></a>
+	<div id="contact" class="contact-body">
+		<div>
+			<h1>Contact Me</h1>
 		</div>
-	</footer>
-	<!-- <script src="js/tota11y.min.js"></script> -->
+		<div class="contact-details">
+			<p>
+				Brad Richardson<br>
+				Calgary, Alberta, Canada<br>
+				<a href="mailto:carbon42@hotmail.com" target="_blank">carbon42@hotmail.com</a>
+			</p>
+			<div class="social-media">
+				<a href="https://github.com/Carbon-42" class="github-link" target="_blank"></a>
+				<a href="https://ca.linkedin.com/in/brad-richardson-6b7b9b79" class="linkedin-link" target="_blank"></a>
+			</div>	
+		</div>	
+	</div>
+	<script src="./js/scripts.js"></script>
 </body>
 </html>
