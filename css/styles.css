@@ -23,13 +23,14 @@ body {
 	font-weight: var(--font-weight__normal);
 	font-size: 16px;
 	line-height: 1.6;
+	margin: var(--top-spacing) auto;
 }
 
 .background {
 	width: 100%;
 	background-image: url(../img/background.png);
 	background-size: cover;
-	margin: 90px 0;
+	background-position: center;
 	padding: 20px 0;
 }
 
@@ -79,52 +80,27 @@ a:active {
 	color: var(--color-active);
 }
 
-
-.menuItem {
-  display: block;
-  margin: 2rem 4rem;
-  font-size: 1.8rem;
-  color: white;
-  text-decoration: none;
-}
-
-.menuItem:hover {
-  text-decoration: underline;
-}
-
 .hamburger {
-  position: fixed;
-  z-index: 100;
-  top: 1rem;
-  right: 1rem;
-  padding: 4px;
-  border: black solid 1px;
-  background: white;
-  cursor: pointer;
-}
-
-.closeIcon {
-  display: none;
+	display: none;
 }
 
 .menu {
-  position: fixed;
-  transform: translateY(-100%);
-  transition: transform 0.2s;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 99;
-  background: whitesmoke;
-  color: white;
-  list-style: none;
-  padding-top: 4rem;
+	display: none;
 }
 
-.showMenu {
-  transform: translateY(0);
+header {
+	position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px;
 }
+
+html {
+  --top-spacing: 60px;
+  scroll-padding-top: var(--top-spacing);
+}
+
 .fixed-top {
   position: fixed;
   top: 0;
@@ -136,7 +112,7 @@ a:active {
 .page-header {
 	display: flex;
 	width: 100%;
-	padding: 10px;
+	padding: 0 10px;
 	background-color: whitesmoke;
 }
 
@@ -144,7 +120,7 @@ a:active {
 	flex: 0 1 200px;
 }
 
-.page-header__item:last-child {
+.page-header > ul {
 	flex-grow: 1;
 	text-align: right;
 }
@@ -156,6 +132,7 @@ a:active {
 	margin: 5px;
 	padding: 5px;
 	font-weight: 700;
+	justify-content: right;
 }
 
 .navigation-list li {
@@ -163,13 +140,9 @@ a:active {
 	margin-left: 15px;
 }
 
-.navigation-list__item--active {
-	font-size: 20px;
-	text-decoration: none;
-}
-
 .navigation-list__item {
 	transition-duration: 0.2s opacity;
+	text-decoration: none;
 }
 
 .navigation-list__item:hover, .navigation-list__item:focus {
@@ -195,6 +168,7 @@ a:active {
 	max-width: 40px;
 	max-height: 40px;
 	border-radius: 50%;
+	margin: 10px 10px;
 }
 
 .profile-portrait {
@@ -246,13 +220,7 @@ button:hover, button:focus, .button:hover, .button:focus {
 	padding: 20px;
 }
 
-.page-footer {
-	clear: both;
-	display: flex;
-	flex-direction: column;
-	text-align: center;
-	padding-bottom: 10px;
-}
+
 
 * {
 	box-sizing: border-box;
@@ -304,6 +272,7 @@ button:hover, button:focus, .button:hover, .button:focus {
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
+	background-position: center;
 }
 
 .project-item {
@@ -364,7 +333,7 @@ button:hover, button:focus, .button:hover, .button:focus {
 
 .project-screenshot-container > h4 {
 	position: absolute;
-	transform: translate(215%, -550%);
+	transform: translate(215%, -450%);
 	color: white;
 	visibility: hidden;
 	z-index: 10;
@@ -372,20 +341,24 @@ button:hover, button:focus, .button:hover, .button:focus {
 }
 
 #project-screenshot-chit-chat > h4 {
-	transform: translate(350%, -600%);
+	transform: translate(350%, -550%);
 }
 
 #project-screenshot-hifi-api > h4 {
-	transform: translate(145%, -510%);
+	transform: translate(145%, -450%);
 }
 
 .project-description {
-	padding: 0 20px;
+	padding: 10px 20px;
+}
+
+.tech-list {
+	padding: 10px 20px;
 }
 
 .long-list-heading {
-	margin: 0;
-	padding: 0 40px;
+	margin-top: 10px;
+	padding: 10px 20px;
 }
 
 .long-list {
@@ -396,16 +369,92 @@ button:hover, button:focus, .button:hover, .button:focus {
 .contact-body {
 	text-align: center;
 	margin: 20px 20px;
+	padding: 30px;
+	height: 700px;
 }
 
 .social-media {
+	margin: 30px;
 	padding: 20px;
 }
+
+
+footer {
+	height: 200px;
+	clear: both;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
 
 @media all and (max-width: 500px) {
 	.project-screenshot {
 		max-width: 300px;
 	}
+
+}
+
+@media all and (max-width: 700px) {
+	.hamburger {
+		display: inline;
+		position: fixed;
+		z-index: 100;
+		top: 1rem;
+		right: 1rem;
+		padding: 0 4px;
+		border: black solid 1px;
+		background: white;
+		cursor: pointer;
+		margin: 0 10px;
+	}
+	
+	.menu {
+		position: fixed;
+		transform: translateY(-100%);
+		transition: transform 0.2s;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 99;
+		background: whitesmoke;
+		color: white;
+		list-style: none;
+		padding-top: 4rem;
+		margin: 0;
+	}
+
+	.closeIcon {
+		display: none;
+	}
+
+	.menuItem {
+		display: block;
+		margin: 2rem 4rem;
+		font-size: 1.8rem;
+		color: black;
+		text-decoration: none;
+		text-align: right;
+	}
+
+	.menuItem:hover {
+		text-decoration: underline;
+	}
+
+	.menuIcon, .closeIcon {
+		color: black;
+	}
+
+	.showMenu {
+		transform: translateY(0);
+	}
+
+	.navigation-list, .navigation-list > li {
+		display: block;
+	}
+
+
 }
 
 @keyframes color-change {
