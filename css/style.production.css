@@ -431,7 +431,7 @@ button:hover, button:focus, .button:hover, .button:focus {
 
 
 footer {
-	height: 200px;
+	height: 100px;
 	clear: both;
 	display: -webkit-box;
 	display: -ms-flexbox;
