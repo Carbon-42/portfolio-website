@@ -203,7 +203,6 @@ button, .button {
 	border-radius: 3px;
 	border-bottom: 2px solid rgba(0, 0, 0, 0.3);
 	transition-duration: 0.2s opacity;
-	/*transition-property: opacity;**/
 }
 
 button:hover, button:focus, .button:hover, .button:focus {
@@ -218,12 +217,6 @@ button:hover, button:focus, .button:hover, .button:focus {
 
 .about {
 	padding: 20px;
-}
-
-
-
-* {
-	box-sizing: border-box;
 }
 
 .about {
@@ -392,7 +385,6 @@ footer {
 	.project-screenshot {
 		max-width: 300px;
 	}
-
 }
 
 @media all and (max-width: 700px) {
@@ -453,8 +445,6 @@ footer {
 	.navigation-list, .navigation-list > li {
 		display: block;
 	}
-
-
 }
 
 @keyframes color-change {
@@ -468,14 +458,6 @@ footer {
 		fill: #f76414;
 	}
 }
-/*@keyframes color-change {
-	from {
-		fill: #edc655;
-	}
-	to {
-		fill: #f76414;
-	}
-}*/
 
 .standard-label {
 	padding-top: 5px;
