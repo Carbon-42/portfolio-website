@@ -12,36 +12,22 @@
 	<title>Career 3</title>
 </head>
 <body>
-	<!-- <header class="page-header fixed-top"> -->
-		<ul class="menu">
-			<li><a class="menuItem" href="#home">Home</a></li>
-			<li><a class="menuItem" href="#about">About</a></li>
-			<li><a class="menuItem" href="#projects">Projects</a></li>
-			<li><a class="menuItem" href="#contact">Contact</a></li>
+	<div id="main">
+	<header class="page-header fixed-top">
+		<img src="img/profile-logo.jpg" alt="my logo" class="page-header__item  profile-logo">
+		<span id="name">BRAD RICHARDSON</span>
+		<ul class="menu navigation-list">
+			<li><a class="menuItem navigation-list__item" href="#home">Home</a></li>
+			<li><a class="menuItem navigation-list__item" href="#about">About</a></li>
+			<li><a class="menuItem navigation-list__item" href="#projects">Projects</a></li>
+			<li><a class="menuItem navigation-list__item" href="#contact">Contact</a></li>
 		</ul>
 		<button class="hamburger">
 			<i class="menuIcon material-icons">menu</i>
 			<i class="closeIcon material-icons">close</i>
 		</button>
-		<!-- <nav class="main-navigation page-header__item topnav">
-			<ul role="menu" class="navigation-list">
-				<li role="presentation">
-					<a href="#home" role="menuitem" class="navigation-list__item">Home</a>
-				</li>
-				<li role="presentation">
-					<a href="#about" role="menuitem" class="navigation-list__item">About</a>	
-				</li>
-				<li role="presentation">
-					<a href="#projects" role="menuitem" class="navigation-list__item">Projects</a>
-				</li>
-				<li role="presentation">
-					<a href="#contact" role="menuitem" class="navigation-list__item">Contact</a>			
-				</li>
-			</ul>
-		</nav> -->
-	<!-- </header> -->
-	<div id="home"></div>
-	<div class="background">
+	</header>
+	<div class="background" id="home">
 		<div class="profile">
 			<img src="img/profile-picture2.png" alt="A picture of me" class="profile-portrait">
 		</div>
@@ -53,7 +39,7 @@
 			</p>
 		</div>
 		<div class="project-button">
-			<a href="files/cv.pdf" class="button" target="_blank">PROJECTS</a>
+			<a href="#projects" class="button">PROJECTS</a>
 		</div>
 	</div>
 	<div id="about" class="about">
@@ -121,7 +107,7 @@
 				<p class="project-description">
 					This is my first project in HTML, CSS and JS.
 				</p>
-				<ul>
+				<ul class="tech-list">
 					<lh>Technologies Used:</lh>
 					<li>HTML</li>
 					<li>CSS</li>
@@ -141,7 +127,7 @@
 					Pokédex app is a a small web application built with HTML, CSS, and JavaScript. It loads data from an 
 					external API and enables the viewing of Pokémon details on demand.
 				</p>
-				<ul>
+				<ul class="tech-list">
 					<lh>Technologies Used:</lh>
 					<li>HTML</li>
 					<li>CSS</li>
@@ -163,7 +149,7 @@
 					Users will be able to sign up, update their personal information, and create a list of their favorite movies.
 				</p>
 				<lh  class="long-list-heading">Technologies Used:</lh>
-				<ul class="long-list">
+				<ul class="long-list tech-list">
 					<li>Node</li>
 					<li>Express</li>
 					<li>MondoDB</li>
@@ -188,7 +174,7 @@
 				<p class="project-description">
 					React. HIFI Movie Client is a client UI integrated with the HIFI Movie API to create a full stack "movies" web application.
 				</p>
-				<ul>
+				<ul class="tech-list">
 					<lh>Technologies Used:</lh>
 					<li>React</li>
 					<li>Bootstrap</li>
@@ -209,7 +195,7 @@
 					application. The web application will provide users with access to information about different movies, 
 					directors, and genres. Users can sign up, update their personal information, and create a list of their favorite movies.
 				</p>
-				<ul>
+				<ul class="tech-list">
 					<lh>Technologies Used:</lh>
 					<li>Angular</li>
 					<li>Angular Material</li>
@@ -230,7 +216,7 @@
 				<p class="project-description">
 					A Time & Place is a serverless, progressive web application (PWA) with React using a test-driven development (TDD) technique.
 				</p>
-				<ul>
+				<ul class="tech-list">
 					<lh>Technologies Used:</lh>
 					<li>React</li>
 					<li>Jest</li>
@@ -251,7 +237,7 @@
 					The Chit Chat app for mobile devices uses React Native. The app will provide users with a chat interface 
 					and options to share images and their location.
 				</p>
-				<ul>
+				<ul class="tech-list">
 					<lh>Technologies Used:</lh>
 					<li>React Native</li>
 					<li>Gifted Chat</li>
@@ -266,20 +252,27 @@
 		</div>		
 	</div>
 	<div id="contact" class="contact-body">
-		<div>
-			<h1>Contact Me</h1>
+		<div class="profile">
+			<img src="img/profile-picture2.png" alt="A picture of me" class="profile-portrait">
 		</div>
-		<div class="contact-details">
-			<p>
-				Brad Richardson<br>
-				Calgary, Alberta, Canada<br>
-				<a href="mailto:carbon42@hotmail.com" target="_blank">carbon42@hotmail.com</a>
-			</p>
-			<div class="social-media">
-				<a href="https://github.com/Carbon-42" class="github-link" target="_blank"></a>
-				<a href="https://ca.linkedin.com/in/brad-richardson-6b7b9b79" class="linkedin-link" target="_blank"></a>
-			</div>	
+		<div>
+				<h1>Contact Me</h1>
+			</div>
+			<div class="contact-details">
+				<p>
+					Brad Richardson<br>
+					Calgary, Alberta, Canada<br>
+					<a href="mailto:carbon42@hotmail.com" target="_blank">carbon42@hotmail.com</a>
+				</p>
+				<div class="social-media">
+					<a href="https://github.com/Carbon-42" class="github-link" target="_blank"></a>
+					<a href="https://ca.linkedin.com/in/brad-richardson-6b7b9b79" class="linkedin-link" target="_blank"></a>
+				</div>	
 		</div>	
+	</div>
+	<footer class="background footer">
+		<p>Made by Brad Richardson</p>
+	</footer>
 	</div>
 	<script src="./js/scripts.js"></script>
 </body>
