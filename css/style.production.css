@@ -62,10 +62,6 @@ a {
 	color: black;
 }
 
-a:visited {
-	color: red;
-}
-
 a:hover, a:focus {
 	/* no under lining when hovering, 
 	a:focus is keyboard targeting activated */
