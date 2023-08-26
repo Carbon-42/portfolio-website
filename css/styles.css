@@ -247,6 +247,16 @@ button:hover, button:focus, .button:hover, .button:focus {
   padding: 20px;
 }
 
+.icon-item {
+	width: 150px;
+	height: 150px;
+}
+
+.img-fluid {
+	width: 100%;
+	height: 100%;
+}
+
 .project-container {
 	position: relative;
 	padding: 20px;
@@ -299,11 +309,6 @@ button:hover, button:focus, .button:hover, .button:focus {
 	padding: 20px;
 }
 
-.img-fluid {
-	width: 120px;
-	height: 100px;
-}
-
 .project-screenshot {
 	max-width: 400px;
 	border-radius: 10px;
@@ -314,7 +319,7 @@ button:hover, button:focus, .button:hover, .button:focus {
 .project-screenshot-container {
 	text-align: center;
 	position: relative;
-	width: 400px;
+	width: 100%;
 }
 
 .project-screenshot:hover {
@@ -387,8 +392,17 @@ footer {
 
 
 @media all and (max-width: 500px) {
+	.icon-item {
+		width: 120px;
+		height: 100px;
+	}
+	
 	.project-screenshot {
 		max-width: 300px;
+	}
+
+	.project-item {
+		max-width: 350px;
 	}
 
 	.contact-body {
@@ -411,7 +425,7 @@ footer {
 		border: black solid 1px;
 		background: white;
 		cursor: pointer;
-		margin: 0 10px;
+		margin: 0 30px;
 	}
 	
 	.menu {
