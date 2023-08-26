@@ -406,7 +406,7 @@ footer {
 	}
 
 	.contact-body {
-		height: 700px;
+		height: 900px;
 	}
 
 	.social-media {
@@ -502,13 +502,27 @@ footer {
 	content: url(../img/project-screenshots/hifi-angular.png);	
 }
 
+.social-link {
+	max-width: 100px;
+	max-height: 100px;
+}
+
 .github-link::before {
 	margin: 30px;
-	content: url(../img/github_icon.svg);
+	content: url(../img/icons/github_icon.svg);
 }
 
 .linkedin-link::before {
 	margin: 30px;
-	content: url(../img/linkedin_icon.svg);
+	content: url(../img/icons/linkedin_icon.svg);
 }
 
+.medium-link::before {
+	margin: 30px;
+	content: url(../img/icons/medium-icon.svg);
+}
+
+.twitter-link::before {
+	margin: 30px;
+	content: url(../img/icons/twitter-x-icon.svg);
+}
