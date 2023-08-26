@@ -313,6 +313,8 @@ button:hover, button:focus, .button:hover, .button:focus {
 
 .project-screenshot-container {
 	text-align: center;
+	position: relative;
+	width: 400px;
 }
 
 .project-screenshot:hover {
@@ -326,7 +328,8 @@ button:hover, button:focus, .button:hover, .button:focus {
 
 .project-screenshot-container > h4 {
 	position: absolute;
-	transform: translate(215%, -450%);
+	top:40%;
+	left: 40%;
 	color: white;
 	visibility: hidden;
 	z-index: 10;
@@ -334,11 +337,13 @@ button:hover, button:focus, .button:hover, .button:focus {
 }
 
 #project-screenshot-chit-chat > h4 {
-	transform: translate(350%, -550%);
+	top: 40%;
+	left: 44%;
 }
 
 #project-screenshot-hifi-api > h4 {
-	transform: translate(145%, -450%);
+	top: 40%;
+	left: 37%;
 }
 
 .project-description {
@@ -384,6 +389,14 @@ footer {
 @media all and (max-width: 500px) {
 	.project-screenshot {
 		max-width: 300px;
+	}
+
+	.contact-body {
+		height: 700px;
+	}
+
+	.social-media {
+		margin: 0;
 	}
 }
 
@@ -445,27 +458,6 @@ footer {
 	.navigation-list, .navigation-list > li {
 		display: block;
 	}
-}
-
-@keyframes color-change {
-	0% {
-		fill: #edc655;
-	}
-	50% {
-		fill: #fcffad;
-	}
-	100% {
-		fill: #f76414;
-	}
-}
-
-.standard-label {
-	padding-top: 5px;
-}
-
-#message {
-	padding-bottom: 5px;
-	margin-bottom: 3px;
 }
 
 .free-course-link {
